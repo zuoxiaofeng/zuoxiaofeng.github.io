@@ -121,8 +121,6 @@
 <meta name="twitter:description" content="什么是静态库 C/C++程序编译一般需经预处理、编译、汇编和链接这四个个步骤，静态库从文件的内容上来看就是C/C++源代码经预处理、编译、汇编这三个步骤生成的二进制文件，当提供给他人使用的时候还要提供声明函数或类的头文件。  一点结论 当其他程序依赖一个静态库，在这个程序编译的预处理、编译、汇编这三个步骤中只是会用到静态库头文件中的声明并不会使用到静态库的二进制文件，只有在链接的时候才会去链接静态">
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="左潇峰的主页" type="application/atom+xml" />
 
@@ -352,16 +350,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/09/22/static-library/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/2018/09/22/static-library/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -474,13 +462,7 @@
           
 
   
-    <div class="comments" id="comments">
-      
-        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
-        <div id="gitment-container" style="display:none"></div>
-      
-    </div>
-
+    <div id="gitalk-container"></div>
   
 
 
@@ -729,48 +711,24 @@
 
 
 
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname,
-            owner: 'zuoxiaofeng',
-            repo: 'zuoxiaofeng.github.io',
-            
-            lang: "en" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: 'b23ddb78b578eaf0d1411c18764d8cab56da3eb9',
-            
-                client_id: '4a414b5b03ca0f8da727'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      function showGitment(){
-        document.getElementById("gitment-display-button").style.display = "none";
-        document.getElementById("gitment-container").style.display = "block";
-        renderGitment();
-      }
-      
-      </script>
-    
 
 
 
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '',
+          clientSecret: '',
+          repo: 'zuoxiaofeng.github.io',
+          owner: '',
+          admin: [''],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')
+       </script>
 
 
 
