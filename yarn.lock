@@ -1182,6 +1182,13 @@ hexo-generator-index@^0.2.1:
     hexo-pagination "0.0.2"
     object-assign "^4.0.1"
 
+hexo-generator-searchdb@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.npm.taobao.org/hexo-generator-searchdb/download/hexo-generator-searchdb-1.3.3.tgz#48d585c9e2e232cd5f875e9b3bc5442e8525d86e"
+  integrity sha1-SNWFyeLiMs1fh16bO8VELoUl2G4=
+  dependencies:
+    nunjucks "^3.2.2"
+
 hexo-generator-tag@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npm.taobao.org/hexo-generator-tag/download/hexo-generator-tag-0.2.0.tgz#c5715846bb41e57d9c20c1d66d7db21a1abf7a62"
@@ -1948,7 +1955,7 @@ nth-check@~1.0.1:
   dependencies:
     boolbase "~1.0.0"
 
-nunjucks@^3.0.0, nunjucks@^3.1.3:
+nunjucks@^3.0.0, nunjucks@^3.1.3, nunjucks@^3.2.2:
   version "3.2.2"
   resolved "https://registry.npm.taobao.org/nunjucks/download/nunjucks-3.2.2.tgz?cache=0&sync_timestamp=1595219927930&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnunjucks%2Fdownload%2Fnunjucks-3.2.2.tgz#45f915fef0f89fbab38c489dc85025f64859f466"
   integrity sha1-RfkV/vD4n7qzjEidyFAl9khZ9GY=
