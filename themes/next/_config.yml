@@ -526,15 +526,15 @@ gitment:
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
 
-# Gitalk
-gitalk:
-  enable: true
-  clientID: 4a414b5b03ca0f8da727
-  clientSecret: b23ddb78b578eaf0d1411c18764d8cab56da3eb9
-  repo: zuoxiaofeng.github.io
-  githubID: zuoxiaofeng
-  adminUser: zuoxiaofeng
-  distractionFreeMode: true
+# # Gitalk
+# gitalk:
+#   enable: true
+#   clientID: 4a414b5b03ca0f8da727
+#   clientSecret: b23ddb78b578eaf0d1411c18764d8cab56da3eb9
+#   repo: zuoxiaofeng.github.io
+#   githubID: zuoxiaofeng
+#   adminUser: zuoxiaofeng
+#   distractionFreeMode: true
 
 # Baidu Share
 # Available value:
