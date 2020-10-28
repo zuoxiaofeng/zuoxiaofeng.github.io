@@ -20,6 +20,11 @@ jobs:
         name: Checkout
         uses: actions/checkout@v2
       -
+        name: Check Submodule
+        uses: Mushus/checkout-submodule@v1
+        with:
+          submodulePath: ./themes/next
+      -
         name: Gen dummy page
         run: |
           yarn 
